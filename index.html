@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Polan (Polarity Analyzer)</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="root" class="container">
+        <div class="d-flex justify-content-center align-items-center vh-100">
+            <div id="card" hidden class="d-flex w-75 h-auto card">
+                <h5 id="card-header" class="card-header">Polan
+                    <small>
+                        <i>(Polarity Analyzer)</i>
+                    </small>
+                </h5>
+                <div id="card-body" class="card-body text-center align-self-center">
+                    <div class="form-group">
+                        <h3 class="card-title">How
+                            <span class="text-success">popular</span> is</h3>
+                        <div class="d-block mx-auto w-50 align-self-center">
+                            <select class="form-control politician text-center" name="Politician" id="Politician">
+                                <option value="pol1">Politician 1</option>
+                                <option value="pol2">Politician 2</option>
+                                <option value="pol3">Politician 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <canvas class="card-img w-100" id="sentiment-chart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Chart .JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+    <!-- CSV Reader -->
+    <script src="assets/js/csv.js"></script>
+    <script src="assets/js/plot.js"></script>
+</body>
+
+</html>
