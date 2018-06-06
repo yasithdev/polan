@@ -6,9 +6,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -16,20 +17,24 @@
     <div id="root" class="container">
         <div class="d-flex justify-content-center align-items-center vh-100">
             <div id="card" hidden class="d-flex w-75 h-auto card shadow-lg">
-                <h5 id="card-header" class="card-header"><strong class="mx-1">POLAN</strong>
-                    <small class="text-secondary">
-                        <i>(Polarity Analyzer)</i>
+
+                <div id="card-header" class="card-header d-inline-flex">
+                    <img style="height: 2rem;" class="my-auto mr-2 drop-shadow icon" src="assets/img/honeycomb.png" alt="">
+                    <h4 class="mx-1 my-auto font-weight-bold">POLAN</h4>
+                    <small class="mx-1 mt-auto mb-1 font-weight-bold">
+                        <i class="text-secondary">(Polarity Analyzer)</i>
                     </small>
-                </h5>
+                </div>
                 <div id="card-body" class="card-body text-center align-self-center">
                     <div class="form-group">
                         <h1 class="card-title">How
-                            <span class="text-success">popular</span> is</h1>
+                            <span class="text-yellow">popular</span> is</h1>
                         <span class="d-block mx-auto w-25 text-center align-self-center">
                             <select class="form-control politician text-center" name="Politician" id="Politician">
-                                <option value="pol1">Politician 1</option>
-                                <option value="pol2">Politician 2</option>
-                                <option value="pol3">Politician 3</option>
+                                <option value="popF">Pope Francis</option>
+                                <option value="hilC">Hilary Clinton</option>
+                                <option value="barO">Barack Obama</option>
+                                <option value="donT">Donald Trump</option>
                             </select>
                         </span>
                     </div>
