@@ -1,7 +1,7 @@
-@import url("//fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Lato");
 body {
     font-family: 'Lato';
-    background-image: url("/assets/img/bg-light.jpg");
+    background-image: url("../img/bg-light.jpg");
     letter-spacing: 0.1em;
 }
 
