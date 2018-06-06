@@ -8,31 +8,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <div id="root" class="container">
         <div class="d-flex justify-content-center align-items-center vh-100">
-            <div id="card" hidden class="d-flex w-75 h-auto card">
-                <h5 id="card-header" class="card-header">Polan
-                    <small>
+            <div id="card" hidden class="d-flex w-75 h-auto card shadow-lg">
+                <h5 id="card-header" class="card-header"><strong class="mx-1">POLAN</strong>
+                    <small class="text-secondary">
                         <i>(Polarity Analyzer)</i>
                     </small>
                 </h5>
                 <div id="card-body" class="card-body text-center align-self-center">
                     <div class="form-group">
-                        <h3 class="card-title">How
-                            <span class="text-success">popular</span> is</h3>
-                        <div class="d-block mx-auto w-50 align-self-center">
+                        <h1 class="card-title">How
+                            <span class="text-success">popular</span> is</h1>
+                        <span class="d-block mx-auto w-25 text-center align-self-center">
                             <select class="form-control politician text-center" name="Politician" id="Politician">
                                 <option value="pol1">Politician 1</option>
                                 <option value="pol2">Politician 2</option>
                                 <option value="pol3">Politician 3</option>
                             </select>
-                        </div>
+                        </span>
                     </div>
                     <canvas class="card-img w-100" id="sentiment-chart"></canvas>
                 </div>

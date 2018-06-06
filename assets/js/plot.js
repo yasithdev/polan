@@ -19,7 +19,7 @@ var renderGraph = function (politician) {
             data: {
                 labels: labels,
                 datasets: [{
-                    label: "Sentiment",
+                    label: "Popularity",
                     data: data,
                     backgroundColor: "rgba(255,237,196,0.4)",
                     borderColor: "rgba(255,177,0,1)",
@@ -28,13 +28,21 @@ var renderGraph = function (politician) {
             },
             options: {
                 scales: {
+                    xAxes: [{
+                        gridLines: {
+                            display: false
+                        }
+                    }],
                     yAxes: [{
                         stacked: true,
+                        gridLines: {
+                            display: false
+                        }
                     }]
                 },
                 animation: {
                     duration: 750,
-                },
+                }
             }
         });
     });
@@ -46,7 +54,8 @@ $('#card').fadeIn(250, "swing", function () {
     $('#card-body').fadeTo(500, 1, function () {});
     // Zoom In Card
     $('#card-body').animate({
-        'width': "100%"
+        'width': "100%",
+        'height': "100%"
     });
     // Render Graph
     renderGraph("pol1");
